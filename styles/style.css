@@ -1,0 +1,314 @@
+/* ---------- 
+font awesome 
+---------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Source+Code+Pro&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Source Code Pro', monospace;
+    
+
+}
+/* ---------
+    commonstyle
+    ----------------- */
+.container{
+    padding:0 100px;
+}
+small{
+    color: gray;
+}
+/*-------------
+ header style 
+ ---------------- */
+.top-header{
+    margin-top:50px;
+    font-size: 30px;
+}
+.header-part{
+     display: flex;
+  
+}
+.header-info{
+    width:50%;
+    margin-top: 50px;
+}
+.header-title{
+    font-weight: 900;
+    font-size: 50px;
+    
+}
+.header-button{
+    width: 180px;
+    height: 35px;
+    background-color: #E02C6D;
+    border-radius: 41px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    color: #FFFFFF;
+
+}
+.header-image{
+    width: 40%;
+}
+.header-image img{
+    width: 80%;
+    margin-left: 50px;
+    transition: transform 2s ease-in-out;
+}
+.header-image img:hover{
+    transform: scale(0.5) rotate(360deg);
+    
+
+}
+/*-------------
+ main style  
+ ---------------*/
+ main{
+     margin-top: 150px;
+     margin-left: 70px;
+ }
+ .main-title{
+     text-align: center;
+     margin-right: 20px;
+     margin-bottom: 50px;
+     font-size: 30px;
+ }
+ .layout{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-row-gap: 3em;
+ }
+ .item-details{
+    
+    border:1px solid whitesmoke;
+    border-radius: 10px;
+    
+    padding: 20px;
+    background-color: white;
+ }
+ .price{
+     font-weight: 900;
+ }
+ .fa-star{
+     color: goldenrod;
+ }
+ .link{
+     display: flex;
+     justify-content: end;
+     color: #E02C6D;
+     margin-top: 50px;
+     margin-right: 50px;
+ }
+ /*------------ 
+ special-section style 
+ ---------------------- */
+ .special-section{
+     display: flex;
+     margin-top: 50px;
+ }
+ .form{
+     
+     width:20%;
+     margin:0 10%;
+     
+     
+ }
+ form{
+     display: grid;
+     grid-row-gap: 2em;
+ }
+ .welcome-note p{
+     width:50%;
+ }
+ /*-----------
+    footer style  
+    --------------*/
+    .footer-details{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(3, 3, 34);
+        color: white;
+        margin-top:50px;
+        
+    }
+    .footer-info{
+        margin:30px 0;
+        
+
+    }
+    .footer-align{
+        display: flex;
+        justify-content: center;
+    }
+    .social-links{
+        margin-left: 10px;
+    
+    
+    }
+    /* ------------
+    responsive for mobile  
+    ------------------*/
+    @media only screen and (max-width:576px) {
+        .container{
+            padding:0;
+        }
+        .top-header{
+            text-align: center;
+        }
+        /*----------------
+         header style
+         ----------------  */
+         .header-part{
+            display:grid;
+            }
+       .header-info{
+           order: 2;
+           width:100%;
+           }
+       .header-title{
+           font-size: 25px;
+        }
+       .header-text{
+           text-align: center;
+       }
+       .header-alignment{
+           margin-top: 0;
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+       }
+       .header-image{
+           order: 1;
+           width: 100%;
+       }
+       .header-image img{
+           width: 80%;
+           margin-left: 0px;
+       }
+    
+      /*----------------
+       main style 
+       --------------------- */
+      main{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .main-title{
+        
+        margin-right: 0px;
+        margin-bottom: 0px;
+        font-size: 20px;
+    }
+    .layout{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 3em;
+    }
+   
+   .item-image img{
+    width:100%;
+   }
+    .link{
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+    
+ /* ------------ 
+ special-section style 
+ ---------------------- */
+ .special-section{
+    display: grid;
+    margin-top: 50px;
+    
+}
+.form{
+    
+    width:80%;
+    margin:0 10%;
+    
+    
+}
+form{
+    display: grid;
+    grid-row-gap: 2em;
+}
+.welcome-note{
+    width:80%;
+    margin-left: 10%;
+}
+.welcome-note p{
+    width: 80%;
+    }
+    
+}
+/*----------
+ responsive for tab
+ -------------------*/
+ @media only screen and (min-width:577px) and (max-width:768px) {
+    .container{
+        padding:0;
+    }
+    .top-header{
+        text-align: center;
+    }
+    /*-------
+     header style 
+     ------------- */
+     .header-info{
+        width:50%;
+        margin-top: 0;
+    }
+    .header-title{
+        font-size: 25px;
+        }
+        .header-image{
+            width: 40%;
+        }
+        .header-image img{
+            width:100%;
+        } 
+          /*----------------
+       main style 
+       --------------------- */
+       main{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .main-title{
+        
+        margin-right: 0px;
+        margin-bottom: 0px;
+        font-size: 30px;
+    }
+    .layout{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-row-gap: 3em;
+    }
+   
+   .item-image img{
+    width:100%;
+   }
+    .link{
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+    /*-----------
+     special-section 
+     ---------------*/
+     .form{
+         width: 70%;
+         margin: 0 5%;
+     }
+     .welcome-note{
+         margin-left: 5%;
+     }
+     .welcome-note p{
+         width: 80%;
+     }
+    
+
+
+ }
